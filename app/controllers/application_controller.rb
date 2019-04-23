@@ -6,10 +6,10 @@ class ApplicationController < ActionController::Base
 
   #cart, this method should return an array of the items stored in 
   #the cart (utilizing the Rails session method)
+  helper_method :cart
 
 
   def cart
     session[:cart] ||= []
-    @cart = session[:cart]
   end
 end
