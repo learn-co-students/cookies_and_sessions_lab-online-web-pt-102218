@@ -1,0 +1,8 @@
+<h1>Welcome to the store</h1>
+<%= render "form" %>
+<h2>Current Cart:</h2>
+<ul>
+<% session[:cart].each do |p| %>
+  <li><%= p %></li>
+<% end %>
+</ul>
